@@ -1,0 +1,13 @@
+*.dll
+*.ini
+*~
+Debug
+Release
+*.user
+*.db
+*.dsw
+*.dsp
+*.suo
+*.log
+*.ncb
+*.exe

@@ -1,0 +1,7 @@
+effect
+{
+    vec4 pixel = framebuffer(_in);
+
+    // Finally write the output pixel using 50% of the source pixel and 50% of its colored version
+    _out = vec4(_in.r,_in.g,_in.b, 1.0) * 0.5 + pixel * 0.5;
+}

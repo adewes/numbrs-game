@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "numbrs", "numbrs\numbrs.vcproj", "{0EB5AD8C-98F0-46E1-AB15-8CC30BCE84B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAFC4A50-863A-4083-A051-C01E129DB226} = {AAFC4A50-863A-4083-A051-C01E129DB226}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vcpp", "..\engine\vcpp_2008\vcpp.vcproj", "{AAFC4A50-863A-4083-A051-C01E129DB226}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EB5AD8C-98F0-46E1-AB15-8CC30BCE84B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EB5AD8C-98F0-46E1-AB15-8CC30BCE84B4}.Debug|Win32.Build.0 = Debug|Win32
+		{0EB5AD8C-98F0-46E1-AB15-8CC30BCE84B4}.Release|Win32.ActiveCfg = Release|Win32
+		{0EB5AD8C-98F0-46E1-AB15-8CC30BCE84B4}.Release|Win32.Build.0 = Release|Win32
+		{AAFC4A50-863A-4083-A051-C01E129DB226}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AAFC4A50-863A-4083-A051-C01E129DB226}.Debug|Win32.Build.0 = Debug|Win32
+		{AAFC4A50-863A-4083-A051-C01E129DB226}.Release|Win32.ActiveCfg = Release|Win32
+		{AAFC4A50-863A-4083-A051-C01E129DB226}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

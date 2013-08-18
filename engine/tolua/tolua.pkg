@@ -1,0 +1,11 @@
+$#include <engine/window toolkit/cscreen.h>
+
+namespace sf{
+	class Image
+	{
+		public:
+		Image();
+		void SetSmooth(bool smooth);
+		bool 	LoadFromFile (const std::string &Filename);
+	}
+}

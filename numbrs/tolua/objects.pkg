@@ -1,0 +1,72 @@
+$#include "logic.h"
+$#include "object.h"
+
+class Logic : Singleton { // tolua_export
+public:
+//This is from the Singleton class!!!
+  int nObjects();
+  static Logic *i();
+  void SetGravity(float gx,float gy);
+  void AddObject(Object *obj);
+  void Evolve(float dt);
+  float Points;
+};
+
+class Vector
+{
+	public:
+	float x,y,z;
+};
+
+class Shape {
+public:
+	void Circle(float radius,float x,float y);
+	void Polygon();
+	void AddVector(float x,float y);
+	Shape();
+	~Shape(){};
+};
+
+
+#define OP_ADD
+#define OP_SUB
+#define OP_MUL
+#define OP_DIV
+
+
+class Object { // tolua_export
+
+private:
+
+public:
+	Object();
+	~Object();
+	
+	void SetOperator(int op);
+	void SetNumber(float n);
+	void SetScale(float s);
+
+	void Delete();
+	void SetStatic(bool state);
+
+	Object *Duplicate();
+	void SetRadius(float r);
+
+	void Evolve(float dt);
+
+	void Collide(Object *obj);
+
+	virtual Vector Position();
+	
+	void SetPosition(float x,float y);
+	void Draw();
+	void DrawShape();
+	void SetName(std::string name);
+	float Angle();
+
+	void AttachToWorld();
+
+	void AddShape(Shape *s);
+	float _R,_G,_B;
+};
+// tolua_end
